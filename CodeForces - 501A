@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c,d,k,l;
+    cin>>a>>b>>c>>d;
+    k=max((3*a)/10,a-(a/250)*c);
+    l=max((3*b)/10,b-(b/250)*d);
+    if(k>l)
+    {
+        cout<<"Misha"<<endl;
+    }
+    if(k<l)
+    {
+        cout<<"Vasya"<<endl;
+    }
+     if(k==l)
+    {
+        cout<<"Tie"<<endl;
+    }
+
+}
