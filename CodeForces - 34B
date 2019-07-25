@@ -1,0 +1,47 @@
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+using namespace std;
+int main()
+{
+
+int i,j,m,c,d,swap,g=0,p,count=0;
+cin>>i;
+cin>>j;
+int a[i];
+for(m=0;m<i;m++)
+{
+    cin>>a[m];
+}
+ for (c = 0 ; c < i - 1; c++)
+  {
+    for (d = 0 ; d < i- c - 1; d++)
+    {
+      if (a[d] > a[d+1])
+      {
+        swap       = a[d];
+        a[d]   = a[d+1];
+        a[d+1] = swap;
+      }
+    }
+  }
+  for(c=0;c<j;c++)
+  {
+      if(count>j||a[c]>0)
+      {
+   break;
+
+      }
+      else
+      {
+
+    g=g+a[c];
+
+      count++;
+      }
+
+
+
+  }
+cout<<fabs(g);
+}
