@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int t,z;
+  cin>>t;
+  while(t--)
+  {
+    string s;
+  cin>>s;
+  z=s.size();
+  if(z<11)
+  {
+      cout<<s<<endl;
+  }
+  else
+  {
+      cout<<s[0]<<z-2<<s[z-1]<<endl;
+  }
+ 
+}
+}
